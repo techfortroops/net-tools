@@ -1,0 +1,555 @@
+Script started on 2020-11-06 03:54:18-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="170" LINES="43"]
+]0;eos@pop-os: ~/Desktop/TechForTroops[01;32meos@pop-os[00m:[01;34m~/Desktop/TechForTroops[00m$ bash run.sh 
+[sudo] password for eos: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+wget is already the newest version (1.20.3-1ubuntu1).
+The following package was automatically installed and is no longer required:
+  libre2-5
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 35 not upgraded.
+--2020-11-06 03:54:23--  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+Resolving repo.anaconda.com (repo.anaconda.com)... 2606:4700::6810:8203, 2606:4700::6810:8303, 104.16.131.3, ...
+Connecting to repo.anaconda.com (repo.anaconda.com)|2606:4700::6810:8203|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 93052469 (89M) [application/x-sh]
+Saving to: ‘Miniconda3-latest-Linux-x86_64.sh’
+
+Miniconda3-latest-Linux-x86_64.sh            0%[                                                                                       ]       0  --.-KB/s               Miniconda3-latest-Linux-x86_64.sh            4%[==>                                                                                    ]   3.97M  19.6MB/s               Miniconda3-latest-Linux-x86_64.sh            9%[=======>                                                                               ]   8.64M  21.3MB/s               Miniconda3-latest-Linux-x86_64.sh           15%[============>                                                                          ]  13.94M  23.0MB/s               Miniconda3-latest-Linux-x86_64.sh           20%[================>                                                                      ]  18.01M  22.3MB/s               Miniconda3-latest-Linux-x86_64.sh           26%[======================>                                                                ]  23.89M  23.7MB/s               Miniconda3-latest-Linux-x86_64.sh           32%[===========================>                                                           ]  29.26M  23.8MB/s               Miniconda3-latest-Linux-x86_64.sh           40%[==================================>                                                    ]  35.78M  25.0MB/s               Miniconda3-latest-Linux-x86_64.sh           45%[======================================>                                                ]  40.42M  24.8MB/s               Miniconda3-latest-Linux-x86_64.sh           51%[===========================================>                                           ]  45.76M  25.0MB/s               Miniconda3-latest-Linux-x86_64.sh           57%[=================================================>                                     ]  51.20M  25.2MB/s               Miniconda3-latest-Linux-x86_64.sh           63%[======================================================>                                ]  56.62M  25.3MB/s               Miniconda3-latest-Linux-x86_64.sh           69%[===========================================================>                           ]  61.89M  25.3MB/s               Miniconda3-latest-Linux-x86_64.sh           75%[================================================================>                      ]  66.72M  25.3MB/s               Miniconda3-latest-Linux-x86_64.sh           82%[======================================================================>                ]  73.42M  25.8MB/s               Miniconda3-latest-Linux-x86_64.sh           88%[============================================================================>          ]  78.83M  25.7MB/s    eta 0s     Miniconda3-latest-Linux-x86_64.sh           95%[==================================================================================>    ]  85.01M  26.2MB/s    eta 0s     Miniconda3-latest-Linux-x86_64.sh          100%[======================================================================================>]  88.74M  26.9MB/s    in 3.4s    
+
+2020-11-06 03:54:26 (26.0 MB/s) - ‘Miniconda3-latest-Linux-x86_64.sh’ saved [93052469/93052469]
+
+
+Welcome to Miniconda3 py38_4.8.3
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>> 
+===================================
+End User License Agreement - Anaconda Individual Edition
+===================================
+
+Copyright 2015-2020, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+This End User License Agreement (the "Agreement") is a legal agreement between you and Anaconda, Inc. ("Anaconda") and governs your use of Anaconda Individual Edition (wh
+ich was formerly known as Anaconda Distribution).
+
+Subject to the terms of this Agreement, Anaconda hereby grants you a non-exclusive, non-transferable license to:
+
+  * Install and use the Anaconda Individual Edition (which was formerly known as Anaconda Distribution),
+  * Modify and create derivative works of sample source code delivered in Anaconda Individual Edition; and
+  * Redistribute code files in source (if provided to you by Anaconda as source) and binary forms, with or without modification subject to the requirements set forth belo
+w.
+
+Anaconda may, at its option, make available patches, workarounds or other updates to Anaconda Individual Edition. Unless the updates are provided with their separate gove
+rning terms, they are deemed part of Anaconda Individual Edition licensed to you as provided in this Agreement.  This Agreement does not entitle you to any support for An
+aconda Individual Edition.
+
+Anaconda reserves all rights not expressly granted to you in this Agreement.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other mater
+ials provided with the distribution.
+  * Neither the name of Anaconda nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written pe
+rmission.
+
+You acknowledge that, as between you and Anaconda, Anaconda owns all right, title, and interest, including all intellectual property rights, in and to Anaconda Individual
+ Edition and, with respect to third-party products distributed with or in Anaconda Individual Edition, the applicable third-party licensors own all right, title and inter
+est, including all intellectual property rights, in and to such products.  If you send or transmit any communications or materials to Anaconda suggesting or recommending 
+changes to the software or documentation, including without limitation, new features or functionality relating thereto, or any comments, questions, suggestions or the lik
+e ("Feedback"), Anaconda is free to use such Feedback. You hereby assign to Anaconda all right, title, and interest in, and Anaconda is free to use, without any attributi
+on or compensation to any party, any ideas, know-how, concepts, techniques or other intellectual property rights contained in the Feedback, for any purpose whatsoever, al
+though Anaconda is not required to use any Feedback.
+
+THIS SOFTWARE IS PROVIDED BY ANACONDA AND ITS CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHAN
+TABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ANACONDA BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENT
+[7m--More--[27mIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON AN
+[7m--More--[27mY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVI
+[7m--More--[27mSED OF THE POSSIBILITY OF SUCH DAMAGE.
+[7m--More--[27m[K
+[7m--More--[27mTO THE MAXIMUM EXTENT PERMITTED BY LAW, ANACONDA AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR ANY LOST PROFIT
+[7m--More--[27mS, LOSS OF USE, LOSS OF DATA OR LOSS OF GOODWILL, OR THE COSTS OF PROCURING SUBSTITUTE PRODUCTS, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORM
+[7m--More--[27mANCE OF ANACONDA INDIVIDUAL EDITION, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT 
+[7m--More--[27mLIABILITY OR ANY OTHER CAUSE OF ACTION OR THEORY OF LIABILITY. IN NO EVENT WILL THE TOTAL CUMULATIVE LIABILITY OF ANACONDA AND ITS AFFILIATES UNDER OR ARISING OUT OF THIS
+[7m--More--[27m AGREEMENT EXCEED US0.00.
+[7m--More--[27m[K
+[7m--More--[27mIf you want to terminate this Agreement, you may do so by discontinuing use of Anaconda Individual Edition.  Anaconda may, at any time, terminate this Agreement and the l
+[7m--More--[27micense granted hereunder if you fail to comply with any term of this Agreement.   Upon any termination of this Agreement, you agree to promptly discontinue use of the Ana
+[7m--More--[27mconda Individual Edition and destroy all copies in your possession or control. Upon any termination of this Agreement all provisions survive except for the licenses grant
+[7m--More--[27med to you.
+[7m--More--[27m[K
+[7m--More--[27mThis Agreement is governed by and construed in accordance with the internal laws of the State of Texas without giving effect to any choice or conflict of law provision or
+[7m--More--[27m rule that would require or permit the application of the laws of any jurisdiction other than those of the State of Texas. Any legal suit, action, or proceeding arising o
+[7m--More--[27mut of or related to this Agreement or the licenses granted hereunder by you must be instituted exclusively in the federal courts of the United States or the courts of the
+[7m--More--[27m State of Texas in each case located in Travis County, Texas, and you irrevocably submit to the jurisdiction of such courts in any such suit, action, or proceeding.
+[7m--More--[27m[K
+[7m--More--[27mNotice of Third Party Software Licenses
+[7m--More--[27m=======================================
+[7m--More--[27m[K
+[7m--More--[27mAnaconda Individual Edition contains software packages or tools licensed on an open source basis from third parties and binary packages of these third party tools. These 
+[7m--More--[27mthird party software packages or tools are provided on an "as is" basis and are subject to their respective license agreements as well as this Agreement. These licenses m
+[7m--More--[27may be accessed from within the Anaconda Individual Edition software or at http://docs.anaconda.com/anaconda/pkg-docs. Information regarding which license is applicable is
+[7m--More--[27m available from within many of the third party software packages and tools and at https://repo.anaconda.com/pkgs/main/ and  https://repo.anaconda.com/pkgs/r/. Anaconda re
+[7m--More--[27mserves the right, in its sole discretion, to change which third party tools are provided in Anaconda Individual Edition.
+[7m--More--[27m[K
+[7m--More--[27mIntel Math Kernel Library
+[7m--More--[27m[K
+[7m--More--[27mAnaconda Individual Edition contains re-distributable, run-time, shared-library files from the Intel Math Kernel Library ("MKL binaries").
+[7m--More--[27m[K
+[7m--More--[27mCopyright 2018 Intel Corporation.  License available at https://software.intel.com/en-us/license/intel-simplified-software-license (the "MKL License").
+[7m--More--[27mYou may use and redistribute the MKL binaries, without modification, provided the following conditions are met:
+[7m--More--[27m[K
+[7m--More--[27m  * Redistributions must reproduce the above copyright notice and the following terms of use in the MKL binaries and in the documentation and/or other materials provided 
+[7m--More--[27mwith the distribution.
+[7m--More--[27m  * Neither the name of Intel nor the names of its suppliers may be used to endorse or promote products derived from the MKL binaries without specific prior written permi
+[7m--More--[27mssion.[K
+[7m--More--[27m  * No reverse engineering, decompilation, or disassembly of the MKL binaries is permitted.
+[7m--More--[27m[K
+[7m--More--[27mYou are specifically authorized to use and redistribute the MKL binaries with your installation of Anaconda Individual Edition subject to the terms set forth in the MKL L
+[7m--More--[27micense. You are also authorized to redistribute the MKL binaries with Anaconda Individual Edition or in the Anaconda package that contains the MKL binaries. If needed, in
+[7m--More--[27mstructions for removing the MKL binaries after installation of Anaconda Individual Edition are available at https://docs.anaconda.com.
+[7m--More--[27m[K
+[7m--More--[27mcuDNN Software
+[7m--More--[27m[K
+[7m--More--[27mAnaconda Individual Edition also contains cuDNN software binaries ("cuDNN binaries") from NVIDIA Corporation. You are specifically authorized to use the cuDNN binaries wi
+[7m--More--[27mth your installation of Anaconda Individual Edition subject to your compliance with the license agreement located at https://docs.nvidia.com/deeplearning/sdk/cudnn-sla/in
+[7m--More--[27mdex.html. You are also authorized to redistribute the cuDNN binaries with an Anaconda Individual Edition package that contains the cuDNN binaries. You can add or remove t
+[7m--More--[27mhe cuDNN binaries utilizing the  install and uninstall features in Anaconda Individual Edition.
+[7m--More--[27m[K
+[7m--More--[27mcuDNN binaries contain source code provided by NVIDIA Corporation.
+[7m--More--[27m[K
+[7m--More--[27mExport; Cryptography Notice
+[7m--More--[27m===================
+[7m--More--[27m[K
+[7m--More--[27mYou must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end
+[7m--More--[27m use.  Anaconda Individual Edition includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or
+[7m--More--[27m re-export to another country, of encryption software. BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the imp
+[7m--More--[27mort, possession, or use, and re-export of encryption software, to see if this is permitted. See the Wassenaar Arrangement http://www.wassenaar.org/ for more information.
+[7m--More--[27m[K
+[7m--More--[27mAnaconda has self-classified this software as Export Commodity Control Number (ECCN) 5D992.c, which includes mass market information security software using or performing
+[7m--More--[27m cryptographic functions with asymmetric algorithms. No license is required for export of this software to non-embargoed countries. The Intel Math Kernel Library containe
+[7m--More--[27md in Anaconda Individual Edition is classified by Intel as ECCN 5D992.c with no license required for export to non-embargoed countries.
+[7m--More--[27m[K
+[7m--More--[27mThe following packages are included in this distribution that relate to cryptography:
+[7m--More--[27m[K
+[7m--More--[27mopenssl[K
+[7m--More--[27m    The OpenSSL Project is a collaborative effort to develop a robust, commercial-grade, full-featured, and Open Source toolkit implementing the Transport Layer Security 
+[7m--More--[27m(TLS) and Secure Sockets Layer (SSL) protocols as well as a full-strength general purpose cryptography library.
+[7m--More--[27m[K
+[7m--More--[27mpycrypto
+[7m--More--[27m    A collection of both secure hash functions (such as SHA256 and RIPEMD160), and various encryption algorithms (AES, DES, RSA, ElGamal, etc.).
+[7m--More--[27m[K
+[7m--More--[27mpyopenssl
+[7m--More--[27m    A thin Python wrapper around (a subset of) the OpenSSL library.
+[7m--More--[27m[K
+[7m--More--[27mkerberos (krb5, non-Windows platforms)
+[7m--More--[27m    A network authentication protocol designed to provide strong authentication for client/server applications by using secret-key cryptography.
+[7m--More--[27m[K
+[7m--More--[27mcryptography
+[7m--More--[27m    A Python library which exposes cryptographic recipes and primitives.
+[7m--More--[27m[K
+[7m--More--[27mpycryptodome
+[7m--More--[27m    A fork of PyCrypto. It is a self-contained Python package of low-level cryptographic primitives.
+[7m--More--[27m[K
+[7m--More--[27mpycryptodomex
+[7m--More--[27m    A stand-alone version of pycryptodome.
+[7m--More--[27m[K
+[7m--More--[27mlibsodium
+[7m--More--[27m    A software library for encryption, decryption, signatures, password hashing and more.
+[7m--More--[27m[K
+[7m--More--[27mpynacl[K
+[7m--More--[27m    A Python binding to the Networking and Cryptography library, a crypto library with the stated goal of improving usability, security and speed.
+[7m--More--[27m[K
+[7m--More--[27mLast updated February 25, 2020
+[7m--More--[27m[K
+
+Do you accept the license terms? [yes|no]
+[no] >>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> yes
+
+Miniconda3 will now be installed into this location:
+/home/eos/miniconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/eos/miniconda3] >>> 
+PREFIX=/home/eos/miniconda3
+Unpacking payload ...
+  0%|                                                                                                                                              | 0/35 [00:00<?, ?it/s]Extracting : xz-5.2.5-h7b6447c_0.conda:   0%|                                                                                                      | 0/35 [00:00<?, ?it/s]Extracting : xz-5.2.5-h7b6447c_0.conda:   3%|██▋                                                                                           | 1/35 [00:00<00:04,  8.35it/s]Extracting : zlib-1.2.11-h7b6447c_3.conda:   3%|██▌                                                                                        | 1/35 [00:00<00:04,  8.35it/s]Extracting : pysocks-1.7.1-py38_0.conda:   6%|█████▎                                                                                       | 2/35 [00:00<00:03,  8.35it/s]Extracting : tqdm-4.46.0-py_0.conda:   9%|████████▎                                                                                        | 3/35 [00:00<00:03,  8.35it/s]Extracting : openssl-1.1.1g-h7b6447c_0.conda:  11%|██████████                                                                              | 4/35 [00:00<00:03,  8.35it/s]Extracting : sqlite-3.31.1-h62c20be_1.conda:  14%|████████████▋                                                                            | 5/35 [00:00<00:03,  8.35it/s]Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  17%|██████████████▉                                                                        | 6/35 [00:00<00:03,  8.35it/s]Extracting : readline-8.0-h7b6447c_0.conda:  20%|██████████████████                                                                        | 7/35 [00:00<00:03,  8.35it/s]Extracting : conda-package-handling-1.6.1-py38h7b6447c_0.conda:  23%|████████████████                                                      | 8/35 [00:00<00:03,  8.35it/s]Extracting : pip-20.0.2-py38_3.conda:  26%|████████████████████████▋                                                                       | 9/35 [00:00<00:03,  8.35it/s]Extracting : libedit-3.1.20181209-hc058e9b_0.conda:  29%|███████████████████████▏                                                         | 10/35 [00:00<00:02,  8.35it/s]Extracting : cryptography-2.9.2-py38h1ba5d50_0.conda:  31%|████████████████████████▊                                                      | 11/35 [00:00<00:02,  8.35it/s]Extracting : pyopenssl-19.1.0-py38_0.conda:  34%|██████████████████████████████▌                                                          | 12/35 [00:00<00:02,  8.35it/s]Extracting : certifi-2020.4.5.1-py38_0.conda:  37%|████████████████████████████████▎                                                      | 13/35 [00:00<00:02,  8.35it/s]Extracting : yaml-0.1.7-had09818_2.conda:  40%|████████████████████████████████████▍                                                      | 14/35 [00:00<00:02,  8.35it/s]Extracting : libffi-3.3-he6710b0_1.conda:  43%|███████████████████████████████████████                                                    | 15/35 [00:00<00:02,  8.35it/s]Extracting : python-3.8.3-hcff3b4d_0.conda:  46%|████████████████████████████████████████▋                                                | 16/35 [00:00<00:02,  8.35it/s]Extracting : python-3.8.3-hcff3b4d_0.conda:  49%|███████████████████████████████████████████▏                                             | 17/35 [00:00<00:01, 11.21it/s]Extracting : pycosat-0.6.3-py38h7b6447c_1.conda:  49%|████████████████████████████████████████▊                                           | 17/35 [00:00<00:01, 11.21it/s]Extracting : ncurses-6.2-he6710b0_1.conda:  51%|██████████████████████████████████████████████▎                                           | 18/35 [00:00<00:01, 11.21it/s]Extracting : wheel-0.34.2-py38_0.conda:  54%|██████████████████████████████████████████████████▍                                          | 19/35 [00:00<00:01, 11.21it/s]Extracting : ca-certificates-2020.1.1-0.conda:  57%|█████████████████████████████████████████████████▏                                    | 20/35 [00:00<00:01, 11.21it/s]Extracting : ld_impl_linux-64-2.33.1-h53a641e_7.conda:  60%|██████████████████████████████████████████████▊                               | 21/35 [00:00<00:01, 11.21it/s]Extracting : cffi-1.14.0-py38he30daa8_1.conda:  63%|██████████████████████████████████████████████████████                                | 22/35 [00:00<00:01, 11.21it/s]Extracting : idna-2.9-py_1.conda:  66%|█████████████████████████████████████████████████████████████████                                  | 23/35 [00:00<00:01, 11.21it/s]Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  69%|████████████████████████████████████████████████████████▉                          | 24/35 [00:00<00:00, 11.21it/s]Extracting : _libgcc_mutex-0.1-main.conda:  71%|████████████████████████████████████████████████████████████████▎                         | 25/35 [00:00<00:00, 11.21it/s]Extracting : chardet-3.0.4-py38_1003.conda:  74%|██████████████████████████████████████████████████████████████████                       | 26/35 [00:00<00:00, 11.21it/s]Extracting : six-1.14.0-py38_0.conda:  77%|█████████████████████████████████████████████████████████████████████████▎                     | 27/35 [00:00<00:00, 11.21it/s]Extracting : urllib3-1.25.8-py38_0.conda:  80%|████████████████████████████████████████████████████████████████████████▊                  | 28/35 [00:00<00:00, 11.21it/s]Extracting : ruamel_yaml-0.15.87-py38h7b6447c_0.conda:  83%|████████████████████████████████████████████████████████████████▋             | 29/35 [00:00<00:00, 11.21it/s]Extracting : requests-2.23.0-py38_0.conda:  86%|█████████████████████████████████████████████████████████████████████████████▏            | 30/35 [00:00<00:00, 11.21it/s]Extracting : tk-8.6.8-hbc83047_0.conda:  89%|██████████████████████████████████████████████████████████████████████████████████▎          | 31/35 [00:00<00:00, 11.21it/s]Extracting : setuptools-46.4.0-py38_0.conda:  91%|████████████████████████████████████████████████████████████████████████████████▍       | 32/35 [00:00<00:00, 11.21it/s]Extracting : pycparser-2.20-py_0.conda:  94%|███████████████████████████████████████████████████████████████████████████████████████▋     | 33/35 [00:00<00:00, 11.21it/s]Extracting : conda-4.8.3-py38_0.tar.bz2:  97%|█████████████████████████████████████████████████████████████████████████████████████████▎  | 34/35 [00:00<00:00, 11.21it/s]                                                                                                                                                                          Collecting package metadata (current_repodata.json): - done
+Solving environment: | / done
+
+## Package Plan ##
+
+  environment location: /home/eos/miniconda3
+
+  added / updated specs:
+    - _libgcc_mutex==0.1=main
+    - ca-certificates==2020.1.1=0
+    - certifi==2020.4.5.1=py38_0
+    - cffi==1.14.0=py38he30daa8_1
+    - chardet==3.0.4=py38_1003
+    - conda-package-handling==1.6.1=py38h7b6447c_0
+    - conda==4.8.3=py38_0
+    - cryptography==2.9.2=py38h1ba5d50_0
+    - idna==2.9=py_1
+    - ld_impl_linux-64==2.33.1=h53a641e_7
+    - libedit==3.1.20181209=hc058e9b_0
+    - libffi==3.3=he6710b0_1
+    - libgcc-ng==9.1.0=hdf63c60_0
+    - libstdcxx-ng==9.1.0=hdf63c60_0
+    - ncurses==6.2=he6710b0_1
+    - openssl==1.1.1g=h7b6447c_0
+    - pip==20.0.2=py38_3
+    - pycosat==0.6.3=py38h7b6447c_1
+    - pycparser==2.20=py_0
+    - pyopenssl==19.1.0=py38_0
+    - pysocks==1.7.1=py38_0
+    - python==3.8.3=hcff3b4d_0
+    - readline==8.0=h7b6447c_0
+    - requests==2.23.0=py38_0
+    - ruamel_yaml==0.15.87=py38h7b6447c_0
+    - setuptools==46.4.0=py38_0
+    - six==1.14.0=py38_0
+    - sqlite==3.31.1=h62c20be_1
+    - tk==8.6.8=hbc83047_0
+    - tqdm==4.46.0=py_0
+    - urllib3==1.25.8=py38_0
+    - wheel==0.34.2=py38_0
+    - xz==5.2.5=h7b6447c_0
+    - yaml==0.1.7=had09818_2
+    - zlib==1.2.11=h7b6447c_3
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.1.1-0
+  certifi            pkgs/main/linux-64::certifi-2020.4.5.1-py38_0
+  cffi               pkgs/main/linux-64::cffi-1.14.0-py38he30daa8_1
+  chardet            pkgs/main/linux-64::chardet-3.0.4-py38_1003
+  conda              pkgs/main/linux-64::conda-4.8.3-py38_0
+  conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.6.1-py38h7b6447c_0
+  cryptography       pkgs/main/linux-64::cryptography-2.9.2-py38h1ba5d50_0
+  idna               pkgs/main/noarch::idna-2.9-py_1
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20181209-hc058e9b_0
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1g-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-20.0.2-py38_3
+  pycosat            pkgs/main/linux-64::pycosat-0.6.3-py38h7b6447c_1
+  pycparser          pkgs/main/noarch::pycparser-2.20-py_0
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-py38_0
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py38_0
+  python             pkgs/main/linux-64::python-3.8.3-hcff3b4d_0
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  requests           pkgs/main/linux-64::requests-2.23.0-py38_0
+  ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.87-py38h7b6447c_0
+  setuptools         pkgs/main/linux-64::setuptools-46.4.0-py38_0
+  six                pkgs/main/linux-64::six-1.14.0-py38_0
+  sqlite             pkgs/main/linux-64::sqlite-3.31.1-h62c20be_1
+  tk                 pkgs/main/linux-64::tk-8.6.8-hbc83047_0
+  tqdm               pkgs/main/noarch::tqdm-4.46.0-py_0
+  urllib3            pkgs/main/linux-64::urllib3-1.25.8-py38_0
+  wheel              pkgs/main/linux-64::wheel-0.34.2-py38_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  yaml               pkgs/main/linux-64::yaml-0.1.7-had09818_2
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: \ | / done
+Executing transaction: \ | / - \ | / done
+installation finished.
+Do you wish the installer to initialize Miniconda3
+by running conda init? [yes|no]
+[no] >>> yes
+no change     /home/eos/miniconda3/condabin/conda
+no change     /home/eos/miniconda3/bin/conda
+no change     /home/eos/miniconda3/bin/conda-env
+no change     /home/eos/miniconda3/bin/activate
+no change     /home/eos/miniconda3/bin/deactivate
+no change     /home/eos/miniconda3/etc/profile.d/conda.sh
+no change     /home/eos/miniconda3/etc/fish/conf.d/conda.fish
+no change     /home/eos/miniconda3/shell/condabin/Conda.psm1
+no change     /home/eos/miniconda3/shell/condabin/conda-hook.ps1
+no change     /home/eos/miniconda3/lib/python3.8/site-packages/xontrib/conda.xsh
+no change     /home/eos/miniconda3/etc/profile.d/conda.csh
+no change     /home/eos/.bashrc
+No action taken.
+If you'd prefer that conda's base environment not be activated on startup, 
+   set the auto_activate_base parameter to false: 
+
+conda config --set auto_activate_base false
+
+Thank you for installing Miniconda3!
+/home/eos/Desktop/TechForTroops
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | done
+Solving environment: - \ | / - done
+
+## Package Plan ##
+
+  environment location: /home/eos/miniconda3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotlipy-0.7.0             |py38h7b6447c_1000         322 KB
+    ca-certificates-2020.10.14 |                0         121 KB
+    certifi-2020.6.20          |     pyhd3eb1b0_3         155 KB
+    cffi-1.14.3                |   py38he30daa8_0         225 KB
+    conda-4.9.1                |   py38h06a4308_0         2.9 MB
+    conda-package-handling-1.7.2|   py38h03888b9_0         886 KB
+    cryptography-3.1.1         |   py38h1ba5d50_0         557 KB
+    idna-2.10                  |             py_0          50 KB
+    libedit-3.1.20191231       |       h14c3975_1         116 KB
+    libffi-3.3                 |       he6710b0_2          50 KB
+    openssl-1.1.1h             |       h7b6447c_0         2.5 MB
+    pip-20.2.4                 |   py38h06a4308_0         1.8 MB
+    pycparser-2.20             |             py_2          94 KB
+    pyopenssl-19.1.0           |             py_1          48 KB
+    requests-2.24.0            |             py_0          56 KB
+    ruamel_yaml-0.15.87        |   py38h7b6447c_1         249 KB
+    setuptools-50.3.0          |   py38h06a4308_1         742 KB
+    six-1.15.0                 |             py_0          13 KB
+    sqlite-3.33.0              |       h62c20be_0         1.1 MB
+    tk-8.6.10                  |       hbc83047_0         3.0 MB
+    tqdm-4.50.2                |             py_0          56 KB
+    urllib3-1.25.11            |             py_0          99 KB
+    wheel-0.35.1               |             py_0          37 KB
+    yaml-0.2.5                 |       h7b6447c_0          75 KB
+    ------------------------------------------------------------
+                                           Total:        15.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  brotlipy           pkgs/main/linux-64::brotlipy-0.7.0-py38h7b6447c_1000
+
+The following packages will be UPDATED:
+
+  ca-certificates                                2020.1.1-0 --> 2020.10.14-0
+  certifi            pkgs/main/linux-64::certifi-2020.4.5.~ --> pkgs/main/noarch::certifi-2020.6.20-pyhd3eb1b0_3
+  cffi                                1.14.0-py38he30daa8_1 --> 1.14.3-py38he30daa8_0
+  conda                                        4.8.3-py38_0 --> 4.9.1-py38h06a4308_0
+  conda-package-han~                   1.6.1-py38h7b6447c_0 --> 1.7.2-py38h03888b9_0
+  cryptography                         2.9.2-py38h1ba5d50_0 --> 3.1.1-py38h1ba5d50_0
+  idna                                             2.9-py_1 --> 2.10-py_0
+  libedit                           3.1.20181209-hc058e9b_0 --> 3.1.20191231-h14c3975_1
+  libffi                                     3.3-he6710b0_1 --> 3.3-he6710b0_2
+  openssl                                 1.1.1g-h7b6447c_0 --> 1.1.1h-h7b6447c_0
+  pip                                         20.0.2-py38_3 --> 20.2.4-py38h06a4308_0
+  pycparser                                       2.20-py_0 --> 2.20-py_2
+  pyopenssl          pkgs/main/linux-64::pyopenssl-19.1.0-~ --> pkgs/main/noarch::pyopenssl-19.1.0-py_1
+  requests           pkgs/main/linux-64::requests-2.23.0-p~ --> pkgs/main/noarch::requests-2.24.0-py_0
+  ruamel_yaml                        0.15.87-py38h7b6447c_0 --> 0.15.87-py38h7b6447c_1
+  setuptools                                  46.4.0-py38_0 --> 50.3.0-py38h06a4308_1
+  six                 pkgs/main/linux-64::six-1.14.0-py38_0 --> pkgs/main/noarch::six-1.15.0-py_0
+  sqlite                                  3.31.1-h62c20be_1 --> 3.33.0-h62c20be_0
+  tk                                       8.6.8-hbc83047_0 --> 8.6.10-hbc83047_0
+  tqdm                                          4.46.0-py_0 --> 4.50.2-py_0
+  urllib3            pkgs/main/linux-64::urllib3-1.25.8-py~ --> pkgs/main/noarch::urllib3-1.25.11-py_0
+  wheel              pkgs/main/linux-64::wheel-0.34.2-py38~ --> pkgs/main/noarch::wheel-0.35.1-py_0
+  yaml                                     0.1.7-had09818_2 --> 0.2.5-h7b6447c_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libffi-3.3           | 50 KB     |                                                                                                                                 |   0% libffi-3.3           | 50 KB     | ############################################################################################################################### | 100% 
+ruamel_yaml-0.15.87  | 249 KB    |                                                                                                                                 |   0% ruamel_yaml-0.15.87  | 249 KB    | ############################################################################################################################### | 100% 
+tk-8.6.10            | 3.0 MB    |                                                                                                                                 |   0% tk-8.6.10            | 3.0 MB    | ###################################################################################                                             |  65% tk-8.6.10            | 3.0 MB    | ############################################################################################################################### | 100% 
+ca-certificates-2020 | 121 KB    |                                                                                                                                 |   0% ca-certificates-2020 | 121 KB    | ############################################################################################################################### | 100% 
+pycparser-2.20       | 94 KB     |                                                                                                                                 |   0% pycparser-2.20       | 94 KB     | ############################################################################################################################### | 100% 
+openssl-1.1.1h       | 2.5 MB    |                                                                                                                                 |   0% openssl-1.1.1h       | 2.5 MB    | ####################################################################9                                                           |  54% openssl-1.1.1h       | 2.5 MB    | ############################################################################################################################### | 100% 
+idna-2.10            | 50 KB     |                                                                                                                                 |   0% idna-2.10            | 50 KB     | ############################################################################################################################### | 100% 
+pyopenssl-19.1.0     | 48 KB     |                                                                                                                                 |   0% pyopenssl-19.1.0     | 48 KB     | ############################################################################################################################### | 100% 
+brotlipy-0.7.0       | 322 KB    |                                                                                                                                 |   0% brotlipy-0.7.0       | 322 KB    | ############################################################################################################################### | 100% 
+libedit-3.1.20191231 | 116 KB    |                                                                                                                                 |   0% libedit-3.1.20191231 | 116 KB    | ############################################################################################################################### | 100% 
+sqlite-3.33.0        | 1.1 MB    |                                                                                                                                 |   0% sqlite-3.33.0        | 1.1 MB    | ############################################################################################################################### | 100% 
+six-1.15.0           | 13 KB     |                                                                                                                                 |   0% six-1.15.0           | 13 KB     | ############################################################################################################################### | 100% 
+certifi-2020.6.20    | 155 KB    |                                                                                                                                 |   0% certifi-2020.6.20    | 155 KB    | ############################################################################################################################### | 100% 
+pip-20.2.4           | 1.8 MB    |                                                                                                                                 |   0% pip-20.2.4           | 1.8 MB    | ############################################################################################################################### | 100% 
+conda-4.9.1          | 2.9 MB    |                                                                                                                                 |   0% conda-4.9.1          | 2.9 MB    | ########################################################################################4                                       |  70% conda-4.9.1          | 2.9 MB    | ############################################################################################################################### | 100% 
+conda-package-handli | 886 KB    |                                                                                                                                 |   0% conda-package-handli | 886 KB    | ############################################################################################################################### | 100% 
+yaml-0.2.5           | 75 KB     |                                                                                                                                 |   0% yaml-0.2.5           | 75 KB     | ############################################################################################################################### | 100% 
+tqdm-4.50.2          | 56 KB     |                                                                                                                                 |   0% tqdm-4.50.2          | 56 KB     | ############################################################################################################################### | 100% 
+urllib3-1.25.11      | 99 KB     |                                                                                                                                 |   0% urllib3-1.25.11      | 99 KB     | ############################################################################################################################### | 100% 
+cryptography-3.1.1   | 557 KB    |                                                                                                                                 |   0% cryptography-3.1.1   | 557 KB    | ############################################################################################################################### | 100% 
+requests-2.24.0      | 56 KB     |                                                                                                                                 |   0% requests-2.24.0      | 56 KB     | ############################################################################################################################### | 100% 
+wheel-0.35.1         | 37 KB     |                                                                                                                                 |   0% wheel-0.35.1         | 37 KB     | ############################################################################################################################### | 100% 
+setuptools-50.3.0    | 742 KB    |                                                                                                                                 |   0% setuptools-50.3.0    | 742 KB    | ############################################################################################################################### | 100% 
+cffi-1.14.3          | 225 KB    |                                                                                                                                 |   0% cffi-1.14.3          | 225 KB    | ############################################################################################################################### | 100% 
+Preparing transaction: | done
+Verifying transaction: - \ done
+Executing transaction: / - \ | / - done
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | done
+
+Downloading and Extracting Packages
+python-3.8.5         | 57.4 MB   |                                                                                                                                 |   0% python-3.8.5         | 57.4 MB   | 1                                                                                                                               |   0% python-3.8.5         | 57.4 MB   | ###4                                                                                                                            |   3% python-3.8.5         | 57.4 MB   | ##########9                                                                                                                     |   9% python-3.8.5         | 57.4 MB   | ##################3                                                                                                             |  14% python-3.8.5         | 57.4 MB   | ########################5                                                                                                       |  19% python-3.8.5         | 57.4 MB   | ###############################9                                                                                                |  25% python-3.8.5         | 57.4 MB   | ######################################3                                                                                         |  30% python-3.8.5         | 57.4 MB   | ###########################################9                                                                                    |  35% python-3.8.5         | 57.4 MB   | ##################################################2                                                                             |  40% python-3.8.5         | 57.4 MB   | #########################################################7                                                                      |  45% python-3.8.5         | 57.4 MB   | #################################################################9                                                              |  52% python-3.8.5         | 57.4 MB   | ########################################################################5                                                       |  57% python-3.8.5         | 57.4 MB   | ##############################################################################9                                                 |  62% python-3.8.5         | 57.4 MB   | ######################################################################################8                                         |  68% python-3.8.5         | 57.4 MB   | #############################################################################################3                                  |  73% python-3.8.5         | 57.4 MB   | ###################################################################################################7                            |  79% python-3.8.5         | 57.4 MB   | ##########################################################################################################4                     |  84% python-3.8.5         | 57.4 MB   | ################################################################################################################8               |  89% python-3.8.5         | 57.4 MB   | #######################################################################################################################3        |  94% python-3.8.5         | 57.4 MB   | #############################################################################################################################7  |  99% python-3.8.5         | 57.4 MB   | ############################################################################################################################### | 100% 
+ncurses-6.2          | 1.1 MB    |                                                                                                                                 |   0% ncurses-6.2          | 1.1 MB    | ############################################################################################################################### | 100% ncurses-6.2          | 1.1 MB    | ############################################################################################################################### | 100% 
+zlib-1.2.11          | 120 KB    |                                                                                                                                 |   0% zlib-1.2.11          | 120 KB    | ############################################################################################################################### | 100% zlib-1.2.11          | 120 KB    | ############################################################################################################################### | 100% 
+setuptools-50.3.0    | 902 KB    |                                                                                                                                 |   0% setuptools-50.3.0    | 902 KB    | ############################################################################################################################### | 100% setuptools-50.3.0    | 902 KB    | ############################################################################################################################### | 100% 
+certifi-2020.6.20    | 160 KB    |                                                                                                                                 |   0% certifi-2020.6.20    | 160 KB    | ############################################################################################################################### | 100% 
+wheel-0.35.1         | 36 KB     |                                                                                                                                 |   0% wheel-0.35.1         | 36 KB     | ############################################################################################################################### | 100% wheel-0.35.1         | 36 KB     | ############################################################################################################################### | 100% 
+ca-certificates-2020 | 128 KB    |                                                                                                                                 |   0% ca-certificates-2020 | 128 KB    | ############################################################################################################################### | 100% ca-certificates-2020 | 128 KB    | ############################################################################################################################### | 100% 
+pip-20.2.4           | 2.0 MB    |                                                                                                                                 |   0% pip-20.2.4           | 2.0 MB    | ############################################################################################################################### | 100% pip-20.2.4           | 2.0 MB    | ############################################################################################################################### | 100% 
+openssl-1.1.1h       | 3.8 MB    |                                                                                                                                 |   0% openssl-1.1.1h       | 3.8 MB    | #######################################################7                                                                        |  44% openssl-1.1.1h       | 3.8 MB    | ############################################################################################################################### | 100% openssl-1.1.1h       | 3.8 MB    | ############################################################################################################################### | 100% 
+readline-8.0         | 428 KB    |                                                                                                                                 |   0% readline-8.0         | 428 KB    | ############################################################################################################################### | 100% readline-8.0         | 428 KB    | ############################################################################################################################### | 100% 
+libgcc-ng-9.1.0      | 8.1 MB    |                                                                                                                                 |   0% libgcc-ng-9.1.0      | 8.1 MB    | ###########################1                                                                                                    |  21% libgcc-ng-9.1.0      | 8.1 MB    | ##################################################################8                                                             |  53% libgcc-ng-9.1.0      | 8.1 MB    | #########################################################################################################################9      |  96% libgcc-ng-9.1.0      | 8.1 MB    | ############################################################################################################################### | 100% 
+libedit-3.1.20191231 | 121 KB    |                                                                                                                                 |   0% libedit-3.1.20191231 | 121 KB    | ############################################################################################################################### | 100% libedit-3.1.20191231 | 121 KB    | ############################################################################################################################### | 100% 
+libstdcxx-ng-9.1.0   | 4.0 MB    |                                                                                                                                 |   0% libstdcxx-ng-9.1.0   | 4.0 MB    | ############################################################7                                                                   |  48% libstdcxx-ng-9.1.0   | 4.0 MB    | ############################################################################################################################### | 100% libstdcxx-ng-9.1.0   | 4.0 MB    | ############################################################################################################################### | 100% 
+tk-8.6.10            | 3.2 MB    |                                                                                                                                 |   0% tk-8.6.10            | 3.2 MB    | ###########################################################################7                                                    |  60% tk-8.6.10            | 3.2 MB    | ############################################################################################################################### | 100% tk-8.6.10            | 3.2 MB    | ############################################################################################################################### | 100% 
+sqlite-3.33.0        | 2.0 MB    |                                                                                                                                 |   0% sqlite-3.33.0        | 2.0 MB    | #######################################################################################################################4        |  94% sqlite-3.33.0        | 2.0 MB    | ############################################################################################################################### | 100% 
+xz-5.2.5             | 438 KB    |                                                                                                                                 |   0% xz-5.2.5             | 438 KB    | ############################################################################################################################### | 100% xz-5.2.5             | 438 KB    | ############################################################################################################################### | 100% 
+ld_impl_linux-64-2.3 | 645 KB    |                                                                                                                                 |   0% ld_impl_linux-64-2.3 | 645 KB    | ############################################################################################################################### | 100% ld_impl_linux-64-2.3 | 645 KB    | ############################################################################################################################### | 100% 
+libffi-3.3           | 54 KB     |                                                                                                                                 |   0% libffi-3.3           | 54 KB     | ############################################################################################################################### | 100% 
+Preparing transaction: - \ done
+Verifying transaction: / - \ | / done
+Executing transaction: \ | / - \ done
+Installing pip dependencies: / - \ | / - \ | / - Ran pip subprocess with arguments:
+['/home/eos/miniconda3/envs/techfortroops/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/eos/Desktop/TechForTroops/condaenv.z1uu3lzb.requirements.txt']
+Pip subprocess output:
+Collecting blessed==1.17.6
+  Using cached blessed-1.17.6-py2.py3-none-any.whl (76 kB)
+Collecting colorama==0.4.4
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting icmplibv2==1.0.6
+  Using cached icmplibv2-1.0.6-py3-none-any.whl (24 kB)
+Collecting inquirer==2.7.0
+  Using cached inquirer-2.7.0-py2.py3-none-any.whl (31 kB)
+Collecting python-editor==1.0.4
+  Using cached python_editor-1.0.4-py3-none-any.whl (4.9 kB)
+Collecting readchar==2.0.1
+  Using cached readchar-2.0.1-py3-none-any.whl (6.9 kB)
+Collecting six==1.15.0
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting wcwidth==0.2.5
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Installing collected packages: six, wcwidth, blessed, colorama, icmplibv2, readchar, python-editor, inquirer
+Successfully installed blessed-1.17.6 colorama-0.4.4 icmplibv2-1.0.6 inquirer-2.7.0 python-editor-1.0.4 readchar-2.0.1 six-1.15.0 wcwidth-0.2.5
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate techfortroops
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ done
+Solving environment: / - done
+
+# All requested packages already installed.
+
+Requirement already satisfied: blessed==1.17.6 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (1.17.6)
+Requirement already satisfied: certifi==2020.6.20 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (2020.6.20)
+Requirement already satisfied: colorama==0.4.4 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (0.4.4)
+Requirement already satisfied: icmplibv2==1.0.6 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (1.0.6)
+Requirement already satisfied: inquirer==2.7.0 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (2.7.0)
+Requirement already satisfied: python-editor==1.0.4 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (1.0.4)
+Requirement already satisfied: readchar==2.0.1 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 7)) (2.0.1)
+Requirement already satisfied: six==1.15.0 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 8)) (1.15.0)
+Requirement already satisfied: wcwidth==0.2.5 in /home/eos/miniconda3/envs/techfortroops/lib/python3.8/site-packages (from -r requirements.txt (line 9)) (0.2.5)
+
+Is ip addr .txt file in same dir as this script? [yes (y) | no (n)]
+yes
+
+Name of file:
+ip.txt
+[34m
+Entered filename: ip.txt[39m
+[33mIP Addresses to Ping: ['8.8.8.8', '8.8.4.4', '192.168.1.1', '192.168.0.1', '10.0.0.5', '127.0.0.1', 'localhost', '::1', 'google.com', 'facebook.com']
+[39m
+Ping Response: PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=20.5 ms
+
+[32mIPv4 Address: 8.8.8.8 is alive!
+[39m
+Ping Response: PING 8.8.4.4 (8.8.4.4) 56(84) bytes of data.
+64 bytes from 8.8.4.4: icmp_seq=1 ttl=115 time=19.1 ms
+
+[32mIPv4 Address: 8.8.4.4 is alive!
+[39m
+[31mIPv4 Address: 192.168.1.1 is dead!
+[39m
+Ping Response: PING 192.168.0.1 (192.168.0.1) 56(84) bytes of data.
+64 bytes from 192.168.0.1: icmp_seq=1 ttl=64 time=3.79 ms
+
+[32mIPv4 Address: 192.168.0.1 is alive!
+[39m
+[31mIPv4 Address: 10.0.0.5 is dead!
+[39m
+Ping Response: PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.039 ms
+
+[32mIPv4 Address: 127.0.0.1 is alive!
+[39m
+Ping Response: PING localhost(localhost (::1)) 56 data bytes
+64 bytes from localhost (::1): icmp_seq=1 ttl=64 time=0.018 ms
+
+[32mIPv4 Address: localhost is alive!
+[39m
+Ping Response: PING ::1(::1) 56 data bytes
+64 bytes from ::1: icmp_seq=1 ttl=64 time=0.023 ms
+
+[32mIPv4 Address: ::1 is alive!
+[39m
+Ping Response: PING google.com(lga34s18-in-x0e.1e100.net (2607:f8b0:4006:818::200e)) 56 data bytes
+64 bytes from lga34s18-in-x0e.1e100.net (2607:f8b0:4006:818::200e): icmp_seq=1 ttl=115 time=19.7 ms
+
+[32mIPv4 Address: google.com is alive!
+[39m
+Ping Response: PING facebook.com(edge-star-mini6-shv-01-bos3.facebook.com (2a03:2880:f14f:82:face:b00c:0:25de)) 56 data bytes
+64 bytes from edge-star-mini6-shv-01-bos3.facebook.com (2a03:2880:f14f:82:face:b00c:0:25de): icmp_seq=1 ttl=57 time=12.4 ms
+
+[32mIPv4 Address: facebook.com is alive!
+[39m
+]0;eos@pop-os: ~/Desktop/TechForTroops[01;32meos@pop-os[00m:[01;34m~/Desktop/TechForTroops[00m$ exit
+exit
+
+Script done on 2020-11-06 03:55:28-05:00 [COMMAND_EXIT_CODE="0"]
